@@ -26,3 +26,11 @@ body{
 .titulo span{
     font-size: 20px;
 }
+
+.contenedor{
+    width: 120rem;
+}
+
+.navegacion-principal{
+    background-color: var(--secundario);
+}
