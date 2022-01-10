@@ -37,5 +37,19 @@ body{
 }
 
 .navegacion-principal{
-    
+    display: flex; /*Acceso a propiedades de flexbox*/
+    justify-content: space-between;
+}
+
+.navegacion-principal a{
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none; /*Sin decoración de los enlaces*/
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
