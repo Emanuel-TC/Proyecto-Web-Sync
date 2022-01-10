@@ -28,7 +28,7 @@ body{
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -38,10 +38,19 @@ body{
 
 .navegacion-principal{
     display: flex; /*Acceso a propiedades de flexbox*/
-    justify-content: space-between;
+    flex-direction: column;
+    
+}
+@media (min-width: 768px) { /*media querie para tablet*/
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .navegacion-principal a{
+    display: block;
+    text-align: center;
     padding: 1rem;
     color: var(--blanco);
     text-decoration: none; /*Sin decoración de los enlaces*/
@@ -53,4 +62,3 @@ body{
     background-color: var(--primario);
     color: var(--oscuro);
 }
-

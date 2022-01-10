@@ -17,7 +17,7 @@
 	// }
 	"Crea tu Media Querie": {
         "prefix": "mq",
-        "body": "@media (min-weidth $1) {\n    $2\n}"
+        "body": "@media (min-width: $1) {\n    $2\n}"
     }
 
 }
