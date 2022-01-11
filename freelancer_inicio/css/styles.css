@@ -4,8 +4,9 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
-    
-
+    --grisClaro: #DFE9F3;
+    /* https://www.cssmatic.com/box-shadow */ /* Sitio para sombras de caja css */
+    /* https://caniuse.com/  */ /*Sitio soporte CSS*/
 }
 /* Globales */
 html{
@@ -19,6 +20,7 @@ html{
 body{
     font-size: 16px; /* 1 rem= 10px */
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% ); /*Degradado de fondo*/
 }
 
 .contenedor{
@@ -43,6 +45,16 @@ body{
     .boton{
         width: auto;
     }
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(117,117,117,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(117,117,117,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(117,117,117,0.48);
+
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 /* Tipografia */
 h1{
@@ -103,6 +115,7 @@ h1,h2,h3{
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero{
